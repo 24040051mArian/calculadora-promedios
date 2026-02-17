@@ -13,7 +13,8 @@ document.getElementById("btnCalcular").addEventListener("click", function(){
     let promedio = (u1 + u2 + u3) / 3;
     document.getElementById("promedio").value = promedio.toFixed(1);
 
-    if(promedio >= 70){
+    // 🔥 aquí está el cambio
+    if(promedio >= 8){
         document.getElementById("estatus").value = "Aprobado";
         document.getElementById("estatus").style.color = "green";
     }else{
@@ -22,5 +23,7 @@ document.getElementById("btnCalcular").addEventListener("click", function(){
     }
 
 });
+
+
 
 
