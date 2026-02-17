@@ -1,0 +1,108 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* FONDO AZUL CASI NEGRO */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #020617, #020b1f, #03122e);
+}
+
+/* TARJETA */
+.container{
+    background:#ffffff;
+    padding:45px 40px;
+    border-radius:18px;
+    width:480px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.6);
+    border-top:5px solid #021a40;
+    animation: aparecer 0.5s ease;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULO */
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#021a40;
+    font-size:26px;
+    letter-spacing:1px;
+}
+
+/* LABELS */
+label{
+    display:block;
+    margin-top:14px;
+    font-weight:600;
+    color:#021a40;
+    font-size:14px;
+}
+
+/* INPUTS */
+input{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border-radius:10px;
+    border:1.5px solid #c9d6ff;
+    font-size:15px;
+    transition:0.3s;
+    background:#f7faff;
+}
+
+input:focus{
+    outline:none;
+    border-color:#021a40;
+    background:white;
+    box-shadow:0 0 10px rgba(2,26,64,0.25);
+}
+
+/* BOTÓN */
+button{
+    width:100%;
+    padding:14px;
+    margin-top:28px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    letter-spacing:1px;
+    background:linear-gradient(135deg,#021a40,#032b66);
+    transition:0.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background:linear-gradient(135deg,#032b66,#043c8c);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* RESULTADOS */
+input[readonly]{
+    background:#eef3ff;
+    font-weight:bold;
+    color:#021a40;
+    border:1.5px solid #a8c1ff;
+}
+
