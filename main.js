@@ -11,17 +11,21 @@ document.getElementById("btnCalcular").addEventListener("click", function(){
     }
 
     let promedio = (u1 + u2 + u3) / 3;
+
+    // mostrar promedio
     document.getElementById("promedio").value = promedio.toFixed(1);
 
     if(promedio >= 8){
         document.getElementById("estatus").value = "Aprobado";
         document.getElementById("estatus").style.color = "green";
-    }else{
+    } else {
         document.getElementById("estatus").value = "Reprobado";
         document.getElementById("estatus").style.color = "red";
     }
 
 });
+
+
 
 
 
